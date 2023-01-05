@@ -1,4 +1,9 @@
-/* Navbar */
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .navbar {
   background-color: #333;
 }
@@ -44,9 +49,3 @@ p {
 
 
 
-#footer {
-  background-color: rgb(41, 37, 37);
-  color: #fff;
-  text-align: center;
-  padding: 0.5px;
-}
