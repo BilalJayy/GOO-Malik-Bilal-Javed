@@ -3,7 +3,7 @@
   $host = "localhost";
   $username = "root";
   $password = "";
-  $db_name = "goo";
+  $db_name = "profile";
 
   $conn = mysqli_connect($host, $username, $password, $db_name);
 

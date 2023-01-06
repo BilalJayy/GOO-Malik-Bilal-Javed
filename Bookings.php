@@ -51,20 +51,84 @@ if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
       <img src="pictures/car1.jpg" alt="car 1">
       <h2>Suzuki Alto</h2>
       <p>Suzuki Alto is a great car to drive in city traffic, gives a good fuel average in these pricey conditions.</p>
-      <button class="btn btn-primary">Book Now</button>
+      <button class="btn btn-primary" data-toggle="modal" data-target="#bookingModal">Book Now</button>
+
+<!-- Modal -->
+<div id="bookingModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Booking Form</h4>
+      </div>
+      <div class="modal-body">
+        <!-- Add your booking form or additional information here -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
     </div>
+  </div>
+
+    </div>
+
     <div class="car">
       <img src="pictures/car2.jpg" alt="car 2">
       <h2>Honda City</h2>
       <p>Looking to go on a long drive? Honda City is the perfect car for you, comfortable for long drives. </p>
-      <button class="btn btn-primary">Book Now</button>
+      <button class="btn btn-primary" data-toggle="modal" data-target="#bookingModal">Book Now</button>
+
+<!-- Modal -->
+<div id="bookingModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Booking Form</h4>
+      </div>
+      <div class="modal-body">
+        <!-- Add your booking form or additional information here -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
     </div>
+
+  </div>
+</div>
+
+
     <div class="car">
       <img src="pictures\car3.jpg" alt="car 3" width="350" height="250">
-      <h2>Honda BRV</h2>
+     <h2>Honda BRV</h2>
       <p>Planning on going out with family or friends? Honda BRV seats 7 people easily.</p>
-      <button class="btn btn-primary">Book Now</button>
+      <button class="btn btn-primary" data-toggle="modal" data-target="#bookingModal">Book Now</button>
+
+<!-- Modal -->
+<div id="bookingModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Booking Form</h4>
+      </div>
+      <div class="modal-body">
+        <!-- Add your booking form or additional information here -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
     </div>
+
+  </div>
+</div>
+
   </div>
 </div>
 
