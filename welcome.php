@@ -34,14 +34,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <ul class="nav navbar-nav">
           <li><a href="Bookings.html">Bookings</a></li>
           <li><a href="Wallet.html">Wallet</a></li>
-          <li><a href="Account.html">Account</a></li>
+          <li><a href="login.php">Account</a></li>
           <li><a href="Help.html">Help</a></li>
         </ul>
 
       </div>
     </div>
   </nav>
-    <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>. Welcome to our site.</h1>
+    <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b>GO WITH GOO</h1>
     <p>
         <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
         <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>

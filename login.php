@@ -113,7 +113,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <ul class="nav navbar-nav">
           <li><a href="Bookings.html">Bookings</a></li>
           <li><a href="Wallet.html">Wallet</a></li>
-          <li><a href="Account.html">Account</a></li>
+          <li><a href="login.php">Account</a></li>
           <li><a href="Help.html">Help</a></li>
         </ul>
 
