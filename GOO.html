@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,38 +9,85 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="Template.css">
 </head>
+
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="GOO.html">GOO</a>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="GOO.html">GOO</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="Bookings.html">Bookings</a></li>
+          <li><a href="Wallet.html">Wallet</a></li>
+          <li><a href="Account.html">Account</a></li>
+          <li><a href="Help.html">Help</a></li>
+        </ul>
+
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="GOO.html">Home</a></li>
-        <li class="dropdown">
-        <li><a href="Bookings.html">Bookings</a></li>
-        <li><a href="Wallet.html">Wallet</a></li>
-        <li><a href="Account.html">Account</a></li>
-        <li><a href="Help.html">Help</a></li>
-      </ul>
-      
+  </nav>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="pictures/car1.jpg" alt="Car-1" width="1200"
+          height="700">
+      </div>
+
+      <div class="item">
+        <img src="pictures/car2.jpg" alt="Car-2" width="1200"
+          height="700">
+      </div>
+
+      <div class="item">
+        <img src="pictures/car3.jpg" alt="Car-2"
+          width="1200" height="700">
+      </div>
+
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-  </div>
-</nav>
-    
-    
-    <!-- Content -->
-    <div class="container mt-5">
-      <h1>Welcome to My Website!</h1>
-      <p>Here you can make bookings, manage your wallet, view your account, and get help.</p>
+
+    <div id="about" class="container text-center">
+      <h1>GO WITH GOO</h1>
+      <p><em>What is GOO?</em></p>
+      <p>Having troubles while renting a car? Too much hastle picking up and then dropping them back off? Well here is
+        an easy solution.
+        We made it easy for you to rent a car. How do we do it?
+
+
+      <p>Follow these six simple steps:<br>
+        1. Firstly register yourself.<br>
+        2. Book your car remotely via your phone/laptop.<br>
+        3. Pay online.<br>
+        4. Pick your car from our GOO zone near you.<br>
+        5. Drop your car off at any GOO zone near you. </p>
+
+      <p>Renting a car through us has its own benefits. Our prices are cheaper as compared to other rent a cars, rather
+        then charging you for a full day, we charge you according to your use and requirements.Also you get free 45
+        miles when you book first time from us. </p>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXa
+</body>
+
+</html>
