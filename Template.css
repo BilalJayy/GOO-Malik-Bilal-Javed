@@ -4,36 +4,52 @@
   margin: 0;
   padding: 0;
 }
-.navbar {
-  background-color: #333;
-}
-
-.navbar-brand {
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.nav-link {
-  color: #fff;
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-right: 1rem;
-  text-decoration: none;
-}
-
-.nav-link:hover {
-  color: #fff;
-  text-decoration: none;
+  .nav-tabs li a {
+    color: #777;
+ 
+  }  
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: red !important;
 }
 
 /* Content */
 .container {
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
 }
-
+.container textarea{
+  width: 100%;
+}
 h1 {
   font-size: 2rem;
   font-weight: bold;
