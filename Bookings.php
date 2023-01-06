@@ -1,3 +1,14 @@
+<?php
+// Start the session
+session_start();
+
+// Check if the user is logged in
+if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
+  // Redirect the user to the login page
+  header("location: login.php");
+  exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +33,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="Bookings.html">Bookings</a></li>
+        <li><a href="Bookings.php">Bookings</a></li>
         <li><a href="Wallet.html">Wallet</a></li>
         <li><a href="login.php">Account</a></li>
         <li><a href="Help.html">Help</a></li>

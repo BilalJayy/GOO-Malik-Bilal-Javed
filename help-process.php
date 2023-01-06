@@ -18,6 +18,7 @@
   $sql = "INSERT INTO messages (text) VALUES ('$message')";
   if (mysqli_query($conn, $sql)) {
       echo "New record created successfully";
+      header("location: Help.html");
   } else {
       echo "Error: " . $sql . "<br>" . mysqli_error($conn);
   }
