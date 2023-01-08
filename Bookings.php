@@ -1,10 +1,10 @@
 <?php
-// Start the session
+
 session_start();
 
-// Check if the user is logged in
+
 if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
-  // Redirect the user to the login page
+  
   header("location: login.php");
   exit;
 }
@@ -65,22 +65,10 @@ if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
   </div>
 </div>
 
-<button class="btn btn-primary" data-toggle="modal" data-target="#bookingModal">Book Now</button>
+<form action="rent.php" method="post">
 
-<!-- Modal -->
-<div id="bookingModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Booking Form</h4>
-      </div>
-      <div class="modal-body">
-      <form action="rent.php" method="post">
     <div class="form-group">
-        <label for="message-input">How many hours would you like to book the car for?:</label>
+        <label for="message-input">For how many hours would you like to book the car for?</label>
         <textarea class="form-control" id="message-input" name="message-input" rows="1"></textarea>
     </div>
     <div class="form-group">
@@ -90,23 +78,15 @@ if (!isset($_SESSION["loggedin"]) || !$_SESSION["loggedin"]) {
         </select>
     </div>
     <div class="form-group">
-        <label for="car-select">Cars:</label>
+        <label for="counsellor-select">Cars:</label>
         <select class="form-control" id="car-select" name="car-select">
             <option value="1">Suzuki Alto</option>
             <option value="2">Honda City</option>
             <option value="3">Honda BRV</option>
         </select>
     </div>
+    <button type="submit" id="standard-button" class="btn btn-primary">Submit</button>
 </form>
-<button class="btn btn-primary" data-toggle="modal" data-target="#bookingModal">Book Now</button>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-  </div>
-</div>
-<div class="modal-body">
 </body> 
+
+</html>
